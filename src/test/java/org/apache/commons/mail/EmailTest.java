@@ -28,7 +28,7 @@ public class EmailTest extends TestCase {
 	private static final String HOST = "smtp.gmail.com";
 	private static final int PORT = 465;
 	private static final boolean SSL_FLAG = true;
-	private static boolean printed = false;
+	private static boolean printedDescription = false;
 	// email and emailNoSender are the SimpleEmail object used throughout the tests,
 	// but emailNoSender does not have a from property
 	SimpleEmailTester email = new SimpleEmailTester();
@@ -40,10 +40,10 @@ public class EmailTest extends TestCase {
 	 * begin testing
 	 */
 	protected void setUp() throws EmailException {
-		if(!printed) {	
+		if(!printedDescription) {	
 			System.out.println("This is class EmailTest, and it is aimed at testing class SimpleEmail");
 			System.out.println("gml___");
-			printed = true;
+			printedDescription = true;
 		}
 		String userName = "username@gmail.com";
 		String password = "password";
