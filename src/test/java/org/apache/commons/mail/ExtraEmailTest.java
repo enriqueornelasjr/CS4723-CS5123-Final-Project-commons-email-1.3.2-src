@@ -23,7 +23,6 @@ public class ExtraEmailTest extends TestCase {
 
 	@Override
 	protected void setUp() throws EmailException {
-        System.out.println("setup from extra");
 		if(!printedDescription) {	
 			System.out.println("This is class ExtraEmailTest, and it is aimed at testing class SimpleEmail with extra tests");
 			System.out.println("gml___");
